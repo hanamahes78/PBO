@@ -6,16 +6,16 @@ package generic;
 
 /**
  *
- * @author Hana Maheswari
+ * @param <T>
  */
-public class Cell {
-        private Object data;
+public class CellGeneric<T> {
+    private T data;
         
-        public void setValue(Object celldata){
+        public void setValue(T celldata){
             data = celldata;
         }//end method setValue
         
-        public Object getValue() {
+        public T getValue() {
             return data;
         }//end method get
-}//end class Cell
+}
